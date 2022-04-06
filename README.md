@@ -10,7 +10,7 @@ go get github.com/testdouble/go-forex-quotes
 
 ### Usage
 
-```
+```go
 package main
 
 import (
