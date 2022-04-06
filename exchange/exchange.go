@@ -29,7 +29,6 @@ func GetRate(to string, from string) (float64, error) {
 	}
 
 	digit := rand.Intn(5)
-	fmt.Printf("digit %v", digit)
 	if digit == 1 {
 		return 0, APIUnavailableError
 	}
