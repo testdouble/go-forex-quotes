@@ -18,8 +18,6 @@ func (i *InvalidCurrencyError) Error() string {
 }
 
 func GetRate(to string, from string) (float64, error) {
-	rand.Seed(time.Now().UnixNano())
-
 	if len(to) < 3 {
 		return 0, &InvalidCurrencyError{to}
 	}
